@@ -1,11 +1,11 @@
 import NavBar from "./Components/Navigation";
-import Hero from "./Components/Hero";
+import HeroSection from "./Components/Hero";
 import "./App.css";
 const App = () => {
 	return (
 		<div>
 			<NavBar />
-			<Hero />
+			<HeroSection />
 		</div>
 	);
 };

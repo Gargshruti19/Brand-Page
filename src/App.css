@@ -12,10 +12,13 @@ body {
 .nav-bar {
 	display: flex;
 	justify-content: space-between;
-	max-width: 1280px;
-	margin: 0 auto;
 	height: 72px;
 	align-items: center;
+	margin-bottom: 70px;
+}
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
 }
 .nav-items {
 	display: flex;
@@ -31,4 +34,50 @@ button {
 	height: 32px;
 	color: white;
 	font-weight: 500;
+	border-radius: 5px;
+}
+.hero {
+	display: flex;
+	align-items: center;
+	height: calc(100vh - 72px);
+}
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.hero-content h1 {
+	font-size: 108px;
+	font-weight: 800;
+	line-height: 102px;
+}
+.hero-content p {
+	font-weight: 600;
+	color: var(--gray);
+	max-width: 400px;
+}
+.hero-btn {
+	display: flex;
+	gap: 40px;
+}
+.hero-btn button {
+	font-size: 24px;
+}
+.secondary-btn {
+	background: transparent;
+	color: var(--gray);
+	border: 1px solid var(--gray);
+}
+.shopping p {
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.brand-icons {
+	display: flex;
+	gap: 16px;
+}
+
+.hero-image img {
+	max-width: 600px;
+
 }
