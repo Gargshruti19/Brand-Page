@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const Hamburger = (props) => {
+export const Hamburger = () => {
 	// const { isOpen, onClose } = props;
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleHamburger = () => {
@@ -19,12 +19,10 @@ export const Hamburger = (props) => {
 		</>
 	);
 };
-export const Navigation = (props) => {
+export const Navigation = () => {
 	// const { isOpen, onClose } = props;
-	const [isOpen, setIsOpen] = useState(false);
-	const toggleHamburger = () => {
-		setIsOpen(!isOpen);
-	};
+	const [isOpen] = useState(false);
+
 	return (
 		isOpen && (
 			<>
@@ -41,7 +39,7 @@ export const Navigation = (props) => {
 		)
 	);
 };
-const NavBar = ({ onClose }) => {
+const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleHamburger = () => {
 		setIsOpen(!isOpen);
